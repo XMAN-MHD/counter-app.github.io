@@ -1,0 +1,121 @@
+body
+{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+#container 
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 105px;
+    background-color: black;
+}
+
+#counter-number
+{
+    text-transform: uppercase;
+    font-size: 100px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: aqua;
+    border: 1px solid aqua;
+
+}
+
+#controls
+{
+    margin-top: 10px;
+    display: grid;
+    grid-template-areas: 'increment-decrement  increment-decrement increment-decrement' 'reset';
+    row-gap: 15px;
+}
+
+#counter-btn
+{
+    grid-area:  'increment-decrement' ;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 50px;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+button
+{
+    text-align: center;
+    cursor: pointer;
+    background-color: aqua;
+}
+
+button:hover
+{
+    background-color: aqua;
+}
+
+#btn-decrement span
+{
+    font-size: 70px;
+    position: relative;
+    bottom:50%;
+}
+
+#btn-increment span
+{
+    font-size: 70px;
+    position: relative;
+    bottom:35%;
+}
+
+
+
+#resetBtn
+{
+    
+    grid-area:  'reset' ;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 50px;
+    justify-content: center;
+}
+
+#resetBtn button
+{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+#add-value 
+{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    column-gap: 30px;
+    justify-content: center;
+}
+
+input
+{
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+#add-value button
+{
+    
+    color: white;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: black;
+}
+
+#add-value button:hover
+{
+    background-color: aqua;
+    color: black;
+}
